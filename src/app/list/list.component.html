@@ -1,0 +1,12 @@
+<ul class="list-group list-group-flush" *ngFor="let item of lista; index as i">
+    <li class="list-group-item">
+      <span>{{i+1}}</span> - <span>Prodotto: <strong>{{item.prodotto}}</strong></span> | 
+      <span>Prezzo: <strong>{{item.prezzo}}</strong></span> | 
+      <span>Quantità: <strong>{{item.quantita}}</strong></span>
+      <button type="button" class="btn btn-danger btn-sm float-right mx-1" (click)="removeProduct(item)">
+        <i class="bi bi-trash"></i></button>
+      <button type="button" class="btn btn-success btn-sm float-right mx-1" (click)="modifyProduct(item)" >
+        <i class="bi bi-pencil"></i></button>
+    </li>
+
+  </ul>

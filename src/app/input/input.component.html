@@ -1,0 +1,16 @@
+
+ <div class="form-row my-4">
+    <div class="col">
+      <input type="text" [(ngModel)]="product.prodotto" name="prodotto" class="form-control" placeholder="Prodotto...">
+    </div>
+    <div class="col">
+      <input type="text" [(ngModel)]="product.prezzo" name="marca" class="form-control" placeholder="Prezzo...">
+    </div>
+    <div class="col">
+      <input type="text" [(ngModel)]="product.quantita" name="quantità" class="form-control" placeholder="Quantità...">
+    </div>
+    <div class="col">
+      <button type="button" class="btn btn-secondary form-control" (click)="addProduct()">Aggiungi</button>
+    </div>
+
+    

@@ -1,0 +1,26 @@
+<div class="bg-dark">
+
+<app-header></app-header>
+
+<div class="container" id="container">
+  <div class="text-center">
+    <h1 id="title" class="my-3">Prodotti</h1>
+  </div>
+  <app-input></app-input>
+
+  <div class="row my-4">
+    <div class="col-sm">
+      <app-list (openModify)="open($event)"></app-list>
+    </div>
+
+
+    <div class="col-sm" *ngIf="modifica">
+      <app-modify [product]="detailProdotto" (closeEmit)="close()"></app-modify>
+    </div>
+
+  </div>
+</div>
+
+<app-footer></app-footer>
+
+</div>
